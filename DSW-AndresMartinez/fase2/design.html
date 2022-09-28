@@ -21,7 +21,15 @@
                     <li>CSS Grid</li>
                 </ul>
             <li>Recursos</li>
+                 <ul>
+                    <li>Etiquetas semanticas</li>
+                    <li>CSS Grid</li>
+                </ul>
             <li>Aprendizaje</li>
+                <ul>
+                    <li>Etiquetas semanticas</li>
+                    <li>CSS Grid</li>
+                </ul>
             <li>Autor</li>
         </ul>
     </nav>
@@ -31,16 +39,64 @@
             Proposito del sitio
         </h2>
         <p>
-            Esta relacionado con el planteamiento del problema realizar un sitio para el aprendizaje de HTML y segun mi tematica
+            El proposito de este sitio es dar a conocer temas principales para el buen desarrollo de web
         </p>
         <article>
-            <h3>
+            <h2>
                 Etiquetas semanticas
-            </h3>
-            <img src="" alt="Descripcion de la imagen">
+            </h2>
+            <img src="img/etiquetas.jpg" alt="El esquema de una página con etiquetas semánticas podría ser el siguiente">
             <p>
-                Contenido del articulo
+                Lo primero que conviene remarcar es que HTML5 no es un lenguaje nuevo en contraposición a HTML, sino una nueva versión del mismo lenguaje. También hay que recordar que HTML5 incorpora cambios en profundidad que los navegadores antiguos no son capaces de mostrar, por lo tanto que hay que tener actualizado el navegador.
+
+                Las etiquetas semánticas ayudan a definir la estructura del documento y permiten que las páginas web sean mejor indexadas por los buscadores.
+
+                Una etiqueta se califica como semántica si tiene que ver el significado, es decir, si nos informa sobre lo que trata su contenido. Por ejemplo, la etiqueta SECTION nos dice que contiene una sección o capítulo dentro de la página. Frente a las etiquetas semánticas tenemos otros tipos de etiquetas como las que afectan al formato, como UL, a multimedia, como VIDEO, etc. <br>
+<br>
+                Características de cada etiqueta: <br>
+
+                - <h4>HEADER</h4>
+
+                Se utiliza como una introducción del elemento que la contiene. Si colocamos un HEADER en el BODY, a primer nivel, será una introducción o presentación de toda la página. Si colocamos un HEADER dentro de un SECTION, contendrá una introducción a esa sección. También se pueden colocar dentro de un ARTICLE. <br>
+
+                El HEADER suele llevar el título, la descripción corta y el logo de la página. El HEADER por si mismo no separa contenidos, no se debe utilizar aislado, sino dentro de otra etiqueta semántica, o a primer nivel en el BODY. <br>
+
+                El HEADER no es equivalente a la parte superior de la página, aunque frecuentemente está en esa posición. La etiqueta HGROUP que se solía utilizar junto con el HEADER ha quedado obsoleta. <br>
+
+                Es bastante frecuente utilizar las etiquetas H1, H2, ... para escribir los títulos dentro del HEADER.html5 logo
+
+                - <h4>SECTION</h4>
+
+                Una SECTION agrupa contenido con un tema común, por ejemplo, las diferentes partes de un periódico: política, sociedad, deportes, ... <br>
+
+                Un sitio de cocina podría estar organizado en secciones. Una SECTION podría ser recetas de carne, otra recetas de pescado y otra de verduras. Dentro de cada SECTION tendríamos un ARTICLE por cada receta. <br>
+
+                Cada SECTION puede estar encabezada por una etiqueta H1, H2,... dentro de una SECTION suelen haber etiquetas ARTICLE, y también etiquetas DIV y P. <br>
+
+                Una SECTION no debe ser usada con el único fin de dar formato, para eso se utiliza la etiqueta DIV.
+
+                - <h4>ARTICLE</h4>
+
+                Representa una unidad de contenido, es decir, contenido que responde a un tema concreto. El ejemplo más claro es un artículo dentro de una revista, por ejemplo, en una página de cocina, un ARTICLE sería cómo elaborar un determinado plato. En un foro, un ARTICLE sería un post, o entrada en el foro. <br>
+
+                Se pueden anidar un ARTICLE dentro de otro ARTICLE. Dentro de un ARTICLE el contenido se suele estructurar con las etiquetas DIV y P. También está permitido poner dentro de un ARTICLE una SECTION, siempre que el artículo sea largo y tenga diferentes secciones, pero lo más natural es que el ARTICLE vaya dentro de una SECTION. Más adelante trataremos cómo crear estructuras de páginas complejas, con tres niveles.
+
+                - <h4>NAV</h4>
+
+                Esta etiqueta está pensada para contener la barra de navegación o los enlaces a las páginas del sitio web. <br>
+
+                Normalmente va en la parte superior de la página o en un lateral. Suele estar formada por una lista de enlaces con las etiquetas UL y LI. Aunque hay multitud de diseños diferentes de barras de navegación y menús.
+
+                - <h4>ASIDE</h4>
+
+                Esta etiqueta está diseñada para contenido tangencial, es decir, menos importante que el cuerpo de la página, y que suele ser de un tema relacionado indirectamente (o no relacionado) con el tema principal. Se suele colocar en los laterales de la página. Pero no todo lo que va en los laterales es ASIDE. Por ejemplo, si la página tiene publicidad en el lateral derecho, puede colocarse en una etiqueta ASIDE, también una pequeña reseña sobre el autor podría ir en esta etiqueta.
+
+                - <h4>FOOTER</h4>
+
+                Normalmente va al final de la página y contiene información del tipo: autor, copyright, contacto, mapa del sitio, etc. Se pueden poner HEADER y FOOTER dentro de SECTION y ARTICLE, aunque no es lo más normal. No hay nada prohibido, pero debe tener cierta lógica o sentido semántico.
             </p>
+
+            <p>https://www.aulaclic.es/articulos/html5-semantica_2.html</p>
 
         </article>
 
@@ -48,16 +104,28 @@
             <h3>
                 CSS Grid
             </h3>
-            <img src="" alt="Descripcion de la imagen">
+            <img src="img/CSS grid.png" alt="Descripcion de la imagen">
             <p>
-                Contenido del articulo
-            </p>
+                CSS Grid Layout es un sistema de rejilla en 2 dimensiones, creado dentro del lenguaje CSS. Es un estándar, lo que quiere decir que no necesitas nada para que el navegador lo entienda. Para ponerlo en práctica necesitas simplemente aplicar el nuevo "display: grid" y comenzar a usar sus potentes propiedades y valores CSS. Con ello podrás controlar todos los aspectos imaginables de la rejilla, obteniendo prácticamente todo lo que se te ocurra de una manera cómoda. <br>
+
+                Actualmente todos los navegadores soportan CSS Grid Layout, por lo que te recomendamos usarlo. Aplicar el sistema de rejilla es una auténtica maravilla, permitiendo hacer con muy poco esfuerzo cosas que antes necesitabas mucho código CSS, o que directamente eran imposibles de conseguir, al menos con tal versatilidad. <br>
+
+                Elementos principales del Grid CSS.
+
+                <li>Contenedor</li> <p>El elemento padre contenedor que definirá la cuadrícula o rejilla.</p>
+                <li>ítem</li> <p>Cada uno de los hijos que contiene la cuadrícula (elemento contenedor).</p>
+                <li>Celda (grid cell)</li> <p>Cada uno de los cuadros que conforman la cuadrícula, esta sería la unidad mínima.</p>
+                <li>Area (grid area)</li> <p>Región o conjunto de celdas de la cuadrícula.</p>
+                <li>Banda (grid track)</li> <p>Banda horizontal o vertical de celdas de la cuadrícula.</p>
+                <li>Línea (grid line)</li> <p>Separador horizontal o vertical de las celdas de la cuadrícula.</p>
+
+           </p>
 
         </article>
         <h3>
             Mockup
         </h3>
-        <img src="" alt="Imagen del Mockup">
+        <img src="img/Mockup.png" alt="Imagen del Mockup">
     </section>
 
     <footer>
