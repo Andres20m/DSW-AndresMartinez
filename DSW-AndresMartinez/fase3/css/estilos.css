@@ -51,20 +51,18 @@
     }
 
 .Contenedor{
-    padding: 30px;
     display: grid;
     grid-template-columns:1fr 1fr 1fr 1fr;
 }
 .Principal{
     background-color: magenta;
-    padding: 30px;
     grid-column: 1/4;
 }
 .Lateral{
     background-color: brown;
-    padding: 30px;
+    
 }
 .Pie{
     background-color: cyan;
-    padding: 30px;
+    text-align: center;
 }
